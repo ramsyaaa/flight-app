@@ -36,3 +36,19 @@
     transform: rotate(360deg);
   }
 }
+
+@keyframes flight {
+  0% {
+    transform: translateX(-50%) translateY(0);
+  }
+  50% {
+    transform: translateX(0%) translateY(-15px);
+  }
+  100% {
+    transform: translateX(50%) translateY(0);
+  }
+}
+
+.animate-flight {
+  animation: flight 3s ease-in-out infinite;
+}
